@@ -1,0 +1,834 @@
+:root {
+    --white: #fff;
+    --light-grey: #888;
+    --light-white: #ddd;
+    --link-color: #F1D826;
+    --heading: #000;
+    --subheading: #888;
+    --text: #222;
+    --primary: #000;
+    --secondary: #555;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white)
+}
+
+a:hover {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+hr {
+    margin: 3rem auto;
+    border-style: none none dotted;
+    width: 100%;
+    border-width: 6px;
+    color: var(--light-grey);
+}
+
+/* CSS For Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-grey);
+}
+
+/* Sidebar CSS Start */
+.sidebar {
+    left: 0;
+    top: 0;
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    color: var(--white);
+    background: linear-gradient(#333, #000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.sidebar #particles-js {
+    position: absolute;
+    min-width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.sidebar .heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.sidebar .heading:hover {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--light-white);
+    text-decoration: underline;
+}
+
+.sidebar img {
+    width: 9.9rem;
+    border-radius: 50%;
+    border: 1px var(--white) solid;
+    margin: 10px auto;
+    z-index: 1;
+}
+
+.sidebar .subheading {
+    font-size: 1.1rem;
+    color: var(--light-grey);
+    z-index: 1;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 2rem auto;
+    z-index: 1;
+}
+
+.sidebar ul li a {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.sidebar .social-links {
+    margin: 10px auto;
+    z-index: 1;
+}
+
+.sidebar .social-links i {
+    margin: 0 5px;
+}
+
+.sidebar p {
+    font-size: 0.8rem;
+    color: var(--light-grey);
+    z-index: 1;
+}
+
+/* Sidebar CSS END */
+
+/* Content CSS Start */
+.content {
+    margin-left: 25%;
+    padding: 3rem 4.5rem;
+    background: var(--white);
+    display: block;
+}
+
+.content .space {
+    height: 2rem;
+}
+
+/* The main heading of each section */
+.content .heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--heading);
+    font-family: "Roboto Mono";
+}
+
+/* The subheading of each section */
+.content .subheading {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--subheading);
+    text-transform: lowercase;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-family: "Roboto Mono";
+}
+
+/* CSS for BIO start */
+.content .bio p {
+    text-align: justify;
+    line-height: 1.2;
+    color: var(--text);
+}
+
+/* CSS for BIO end */
+
+/* CSS for PROJECTS start */
+.content .project .project-content {
+    display: grid;
+}
+
+.content .project .project-content .project-item {
+    display: flex;
+    width: 100%;
+    height: 202px;
+    margin-bottom: 3rem;
+    border: 1px solid #333;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 0 15px var(--primary)
+}
+
+.content .project .project-content .project-item:last-child {
+    margin-bottom: 0
+}
+
+.content .project .project-content .project-item img {
+    width: 350px;
+    height: auto;
+}
+
+.content .project .project-content .project-item .project-item-content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    width: 100%;
+}
+
+.content .project .project-content .project-item .project-item-content h4 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.content .project .project-content .project-item .project-item-content h5 {
+    color: var(--secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.content .project .project-content .project-item .project-item-content p {
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.2;
+    margin: 10px 0;
+    overflow-y: auto;
+}
+
+.content .project .project-content .project-item .project-item-content .project-item-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.content .project .project-content .project-item .project-item-content .project-item-footer span {
+    display: flex;
+    justify-content: start;
+}
+
+.content .project .project-content .project-item .project-item-content .project-item-footer img {
+    height: 2em;
+    width: 2em;
+}
+
+.content .project .project-content .view-more {
+    text-align: center;
+    margin: 0 auto
+}
+
+.content .project .project-content .view-more div {
+    background: var(--white);
+    color: var(--primary);
+    border: none;
+}
+
+.content .project .project-content .view-more div .fas {
+    color: var(--primary);
+}
+
+.content .project .project-content .view-more div:hover {
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 20px;
+}
+
+.content .project .project-content .view-more div:hover .fas {
+    color: var(--link-color);
+}
+
+/* CSS for PROJECTS end */
+
+/* CSS for EDUCATION start */
+
+.content .education .education-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.content .education .education-item:last-child {
+    margin-bottom: 0;
+}
+
+.content .education .education-item .details h4 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.content .education .education-item .details h5 {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.content .education .education-item .details p {
+    line-height: 1.2;
+    color: var(--text);
+    margin-top: 0.15rem;
+}
+
+.content .education .education-item .timeline {
+    color: var(--link-color);
+    font-family: "Roboto Mono";
+    font-weight: 900;
+}
+
+/* CSS for EDUCATION end */
+
+/* CSS for EXPERIENCE start */
+
+.content .experience .experience-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.content .experience .experience-item:last-child {
+    margin-bottom: 0;
+}
+
+.content .experience .experience-item .details {
+    width: 70%;
+}
+
+.content .experience .experience-item .details h4 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.content .experience .experience-item .details h5 {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.content .experience .experience-item .details p {
+    text-align: justify;
+    line-height: 1.2;
+    color: var(--text);
+}
+
+.content .experience .experience-item .timeline {
+    color: var(--link-color);
+    font-family: "Roboto Mono";
+    font-weight: 900;
+}
+
+/* CSS for EXPERIENCE end */
+
+/* CSS for SKILLS start */
+
+.content .skills div {
+    margin-bottom: 3rem;
+}
+
+.content .skills div:last-child {
+    margin-bottom: 0;
+}
+
+.content .skills div h4 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.content .skills div .skills-items img {
+    height: 50px;
+    width: 50px;
+}
+
+/* CSS for SKILLS end */
+
+/* CSS for ACHIEVEMENTS start */
+
+.content .achievements .achievement-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.content .achievements .achievement-item:last-child {
+    margin-bottom: 0;
+}
+
+.content .achievements .achievement-item .details {
+    width: 70%;
+}
+
+.content .experachievementsience .achievement-item .details h4 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.content .achievements .achievement-item .details p {
+    text-align: justify;
+    line-height: 1.2;
+    color: var(--text);
+}
+
+.content .achievements .achievement-item .timeline p {
+    color: var(--link-color);
+    font-family: "Roboto Mono";
+    font-weight: 900;
+}
+
+.content .achievements .achievement-item .timeline button {
+    margin-top: 10px;
+}
+
+/* CSS for ACHIEVEMENTS end */
+
+/* CSS for CONTACT start */
+
+.content .contact .contact-area {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content .contact .contact-area .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    box-shadow: 0 0 15px var(--primary)
+}
+
+.content .contact .contact-area .details .detail-item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.content .contact .contact-area .details .detail-item i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary);
+    color: var(--link-color);
+    min-height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.content .contact .contact-area .details .detail-item div h4 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.content .contact .contact-area .details .detail-item div a {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.content .contact .contact-area .form {
+    box-shadow: 0 0 15px var(--primary);
+    width: 50%;
+    padding: 1rem;
+}
+
+.content .contact .contact-area .form .name {
+    float: left;
+    width: 48%;
+}
+
+.content .contact .contact-area .form .email {
+    float: right;
+    width: 48%;
+}
+
+.content .contact .contact-area .form label {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.content .contact .contact-area .form input,
+textarea {
+    width: 100%;
+    padding: 10px 0;
+    border: 0.1px solid var(--primary);
+    margin: 5px 0 10px 0
+}
+
+.content .contact .contact-area .form .submit {
+    text-align: center;
+}
+
+/* CSS for CONTACT end */
+
+/* CSS for All Porjects View */
+
+/* The main heading of each section */
+.project-full .heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--heading);
+    font-family: "Roboto Mono";
+}
+
+/* The subheading of each section */
+.project-full .subheading {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--subheading);
+    text-transform: lowercase;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-family: "Roboto Mono";
+}
+
+.project-full {
+    margin-left: 25%;
+    padding: 3rem 4.5rem;
+    background: var(--white);
+    display: block;
+}
+
+.project-full .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--link-color);
+    zoom: 2
+}
+
+.project-full .close:hover {
+    background: var(--link-color);
+    color: var(--primary);
+}
+
+.project-full .project .project-content .project-item .project-item-header {
+    display: flex;
+}
+
+.project-full .project .project-content .project-item .project-item-header img {
+    width: 50%;
+    height: auto;
+}
+
+.project-full .project .project-content .project-item .project-item-header .project-item-header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-full .project .project-content .project-item .project-item-header .project-item-header-right span {
+    margin: auto 0 0 0;
+}
+
+.project-full .project .project-content .project-item .project-item-header .project-item-header-right img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.project-full .project .project-content .project-item .project-item-header .project-item-header-right button {
+    margin: auto 0
+}
+
+.project-full .project .project-content .project-item .project-item-footer {
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+
+.project-full .project .project-content .project-item .project-item-footer h4 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.project-full .project .project-content .project-item .project-item-footer h5 {
+    color: var(--secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.project-full .project .project-content .project-item .project-item-footer p {
+    text-align: justify;
+    line-height: 1.2;
+    color: var(--text);
+    margin-top: 10px;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    border: 1px solid var(--primary);
+    background: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+    width: 150px;
+}
+
+.btn .fab {
+    color: var(--link-color);
+}
+
+@media(max-width:768px) {
+    br {
+        display: none;
+    }
+
+    /* Sidebar To Top Cover */
+    .sidebar {
+        width: 100%;
+        position: relative;
+        padding: 1.5rem 0;
+    }
+
+    .sidebar ul {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 1.5rem 2rem;
+        text-align: left;
+    }
+
+    .content .experience .experience-item .details {
+        width: 60%;
+    }
+
+    .content .contact .contact-area {
+        flex-direction: column;
+    }
+
+    .content .contact .contact-area .details {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .content .contact .contact-area .details .detail-item div {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .content .contact .contact-area .form {
+        width: auto;
+        text-align: left;
+    }
+
+    .project-full {
+        margin-left: 0;
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media(max-width:425px) {
+
+    /* Sidebar To Top Cover */
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .sidebar ul {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 1.5rem 2rem;
+        text-align: center;
+    }
+
+    .content .project .project-content .project-item {
+        flex-direction: column;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .content .project .project-content .project-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content .project .project-content .project-item .project-item-content {
+        margin: 10px auto;
+        width: 90%;
+        height: 300px;
+    }
+
+    .content .project .project-content .project-item .project-item-content .project-item-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 75px;
+    }
+
+    .content .project .project-content .project-item .project-item-content .project-item-footer button {
+        margin-top: 10px;
+    }
+
+    .content .education .education-item {
+        flex-direction: column;
+    }
+
+    .content .experience .experience-item {
+        flex-direction: column;
+    }
+
+    .content .experience .experience-item .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .content .achievements .achievement-item {
+        flex-direction: column;
+    }
+
+    .content .achievements .achievement-item .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .content .contact .contact-area {
+        flex-direction: column;
+    }
+
+    .content .contact .contact-area .details {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .content .contact .contact-area .details .detail-item {
+        text-align: left;
+    }
+
+    .content .contact .contact-area .details .detail-item div {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .content .contact .contact-area .form {
+        width: auto;
+        text-align: left;
+    }
+
+    .project-full {
+        text-align: center;
+    }
+
+    .project-full .close {
+        zoom: 1.2;
+    }
+
+    .project-full .project .project-content .project-item .project-item-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-full .project .project-content .project-item .project-item-header img {
+        width: 100%;
+    }
+
+    .project-full .project .project-content .project-item .project-item-header .project-item-header-right span {
+        margin: 5px 0 0 0;
+    }
+
+    .project-full .project .project-content .project-item .project-item-header .project-item-header-right button {
+        margin: 8px 0 0 0;
+    }
+
+}
+
+
+
+@media (hover: hover) {
+    .btn:hover {
+        padding: .5rem 1rem;
+        border: 1px solid #000;
+        background: var(--white);
+        color: var(--primary);
+        cursor: pointer;
+    }
+
+    .btn:hover .fab {
+        color: var(--primary)
+    }
+
+    .btn:focus {
+        outline: none;
+    }
+}
