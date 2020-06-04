@@ -181,9 +181,7 @@ hr {
 /* CSS for BIO end */
 
 /* CSS for PROJECTS start */
-.content .project .project-content {
-    display: grid;
-}
+
 
 .content .project .project-content .project-item {
     display: flex;
@@ -195,27 +193,37 @@ hr {
     box-shadow: 0 0 15px var(--primary)
 }
 
-.content .project .project-content .project-item:last-child {
-    margin-bottom: 0
+.content .project .project-content .project-item:hover {
+    box-shadow: 0 0 15px var(--link-color)
 }
 
 .content .project .project-content .project-item img {
-    width: 350px;
+    width: 50%;
+    max-width: 350px;
     height: auto;
 }
 
 .content .project .project-content .project-item .project-item-content {
     display: flex;
     flex-direction: column;
-    margin: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1.5rem;
     width: 100%;
+    overflow: hidden;
 }
 
 .content .project .project-content .project-item .project-item-content h4 {
+    display: block;
     color: var(--primary);
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 800;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .content .project .project-content .project-item .project-item-content h5 {
@@ -225,24 +233,23 @@ hr {
 }
 
 .content .project .project-content .project-item .project-item-content p {
+    display: block;
     color: var(--text);
     font-size: 1rem;
     font-weight: 400;
     text-align: justify;
     line-height: 1.2;
     margin: 10px 0;
-    overflow-y: auto;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .content .project .project-content .project-item .project-item-content .project-item-footer {
     display: flex;
-    justify-content: space-between;
-    margin-top: auto;
-}
-
-.content .project .project-content .project-item .project-item-content .project-item-footer span {
-    display: flex;
-    justify-content: start;
+    flex-direction: column;
+    text-align: center;
 }
 
 .content .project .project-content .project-item .project-item-content .project-item-footer img {
@@ -250,28 +257,34 @@ hr {
     width: 2em;
 }
 
-.content .project .project-content .view-more {
+.content .project .project-content .project-item .project-item-content .project-item-footer a {
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.content .project .view-more {
     text-align: center;
+    width: 150px;
     margin: 0 auto
 }
 
-.content .project .project-content .view-more div {
+.content .project .view-more div {
     background: var(--white);
     color: var(--primary);
     border: none;
 }
 
-.content .project .project-content .view-more div .fas {
+.content .project .view-more div .fas {
     color: var(--primary);
 }
 
-.content .project .project-content .view-more div:hover {
+.content .project .view-more div:hover {
     background: var(--primary);
     color: var(--white);
     border-radius: 20px;
 }
 
-.content .project .project-content .view-more div:hover .fas {
+.content .project .view-more div:hover .fas {
     color: var(--link-color);
 }
 
@@ -421,7 +434,9 @@ hr {
     font-weight: 900;
 }
 
-.content .achievements .achievement-item .timeline button {
+.content .achievements .achievement-item .timeline a {
+    display: block;
+    text-align: center;
     margin-top: 10px;
 }
 
@@ -506,7 +521,9 @@ textarea {
     width: 100%;
     padding: 10px 0;
     border: 0.1px solid var(--primary);
-    margin: 5px 0 10px 0
+    margin: 5px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .content .contact .contact-area .form .submit {
@@ -626,7 +643,6 @@ textarea {
     background: var(--primary);
     color: var(--white);
     cursor: pointer;
-    width: 150px;
 }
 
 .btn .fab {
@@ -716,9 +732,9 @@ textarea {
     }
 
     .content .project .project-content .project-item .project-item-content {
-        margin: 10px auto;
+        margin: 1rem auto;
         width: 90%;
-        height: 300px;
+        height: auto;
     }
 
     .content .project .project-content .project-item .project-item-content .project-item-footer {
