@@ -8,10 +8,10 @@
     <title>Pratyay Rudra</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body onload="initialize()">
     <div class="sidebar">
         <div id="particles-js"></div>
         <h1 class="heading">Pratyay Rudra</h1>
@@ -33,9 +33,10 @@
             <a href=""><i class="fab fa-github-square fa-2x"></i></a>
         </div>
         <p>
-            <script type="text/javascript">
+            Made with <span style="color: #e25555;">&hearts;</span> By <a href="https://pratyayrudra.com">Pratyay
+                Rudra</a> | <script type="text/javascript">
                 document.write(new Date().getFullYear());
-            </script>&nbsp;&copy; Pratyay Rudra
+            </script>
         </p>
     </div>
 
@@ -57,32 +58,7 @@
         <div class="project" id="project">
             <h2 class="heading">Project</h2>
             <h4 class="subheading">Few of my works</h4>
-            <div class="project-content">
-                <div class="project-item">
-                    <img src="https://i.picsum.photos/id/400/350/202.jpg" alt="">
-                    <div class="project-item-content">
-                        <h4>Project Title Lorem ipsum do sit amet.</h4>
-                        <h5>WordPress</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur esse minus aperiam
-                            vel earum sint eligendi, necessitatibus voluptatem fugiat cum ratione praesentium reiciendis
-                            at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore non et qui
-                            accusantium. Laboriosam temporibus aperiam repudiandae magnam vero blanditiis! Ipsam laborum
-                            sit error, accusantium fugit assumenda pariatur totam voluptate.
-                        </p>
-                        <div class="project-item-footer">
-                            <span>
-                                <img src="assets/icons/icons8-html-5-50.png" alt="html">
-                                <img src="assets/icons/icons8-css3-50.png" alt="css">
-                                <img src="assets/icons/icons8-javascript-50.png" alt="javascript">
-                                <img src="assets/icons/icons8-bootstrap-50.png" alt="bootstrap">
-                                <img src="assets/icons/icons8-bootstrap-50.png" alt="bootstrap">
-                            </span>
-                            <button class="btn"><i class="fab fa-github"></i>&nbsp;Project Link</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            <div class="project-content" id="projectContent"></div>
             <div class="view-more" onclick="displayProjects()">
                 <div class="btn"><i class="fas fa-eye"></i>&nbsp;View More</div>
             </div>
@@ -95,28 +71,7 @@
         <div class="education" id="education">
             <h2 class="heading">Education</h2>
             <h4 class="subheading">what i studied</h4>
-            <div class="education-item">
-                <div class="details">
-                    <h4>MAKAUT</h4>
-                    <h5>Bachelors Of Technology</h5>
-                    <p>Information Technology</p>
-                    <p>CGPA: 8</p>
-                </div>
-                <div class="timeline">
-                    August 2017 - August 2021
-                </div>
-            </div>
-            <div class="education-item">
-                <div class="details">
-                    <h4>MAKAUT</h4>
-                    <h5>Bachelors Of Technology</h5>
-                    <p>Information Technology</p>
-                    <p>CGPA: 8</p>
-                </div>
-                <div class="timeline">
-                    August 2017 - August 2021
-                </div>
-            </div>
+            <div id="educationContent"></div>
         </div>
 
         <div class="space">
@@ -126,29 +81,7 @@
         <div class="experience" id="experience">
             <h2 class="heading">Experience</h2>
             <h4 class="subheading">my experiences</h4>
-            <div class="experience-item">
-                <div class="details">
-                    <h4>WEB Developer</h4>
-                    <h5>Ace Lumbers PVT. LTD.</h5>
-                    <p>Lorem ipsum dol</p>
-                </div>
-                <div class="timeline">
-                    August 2017 - August 2021
-                </div>
-            </div>
-            <div class="experience-item">
-                <div class="details">
-                    <h4>WordPress Developer</h4>
-                    <h5>Bums On The Saddle PVT. LTD.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam suscipit eum tenetur deleniti
-                        inventore iusto sed aliquam voluptatem, veritatis praesentium distinctio recusandae, deserunt
-                        nisi doloremque laudantium dolore vel reiciendis tempora repellendus voluptatum quo magni sequi.
-                        Excepturi adipisci in harum illum!</p>
-                </div>
-                <div class="timeline">
-                    August 2017 - August 2021
-                </div>
-            </div>
+            <div id="experienceContent"></div>
         </div>
 
         <div class="space">
@@ -222,29 +155,7 @@
         <div class="achievements" id="achievements">
             <h2 class="heading">Achievements</h2>
             <h3 class="subheading">my achievements and certifications</h3>
-            <div class="achievement-item">
-                <div class="details">
-                    <h4>Bengalathon Finalist</h4>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="timeline">
-                    <p>November 2019</p>
-                    <button class="btn">View</button>
-                </div>
-            </div>
-            <div class="achievement-item">
-                <div class="details">
-                    <h4>Bengalathon Finalist</h4>
-                    <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolore veniam porro modi dicta,
-                        pariatur accusamus quam officia laborum. Dolorem?,
-                        placeat.</p>
-                </div>
-                <div class="timeline">
-                    <p>November 2019</p>
-                    <button class="btn">View</button>
-                </div>
-            </div>
+            <div id="achievementContent"></div>
         </div>
 
         <div class="space">
@@ -270,12 +181,12 @@
                             <a href="mailto:rudrapratyay1999@gmail.com">rudrapratyay1999@gmail.com</a>
                         </div>
                     </div>
-                    <!-- <div class="detail-item">
+                    <div class="detail-item">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471218.3856308042!2d88.04954359381742!3d22.676385747131917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1588361627662!5m2!1sen!2sin"
                             width="100%" height="auto" frameborder="0" style="border:0;margin: 1rem 0"
                             allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="form">
                     <form action="">

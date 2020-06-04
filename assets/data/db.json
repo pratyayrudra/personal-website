@@ -1,0 +1,56 @@
+{
+    "projects": [{
+            "id": 1,
+            "title": "Project Title 1",
+            "subTitle": "WordPress",
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur esse minus aperiam vel earum sint eligendi, necessitatibus uptatem fugiat cum ratione praesentium reiciendis at.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore non et qui accusantium.Laboriosam temporibus aperiam repudiandae magnam vero blanditiis!Ipsam laborum sit error, accusantium fugit assumenda pariatur totam voluptate.",
+            "image": "https://i.picsum.photos/id/400/350/202.jpg",
+            "date": "3/5/20",
+            "technologies": ["html-5", "css3", "bootstrap", "javascript", "bootstrap"]
+        }, {
+            "id": 1,
+            "title": "Video Based Dynamic Human Authentication System For Access Control",
+            "subTitle": "NodeJS",
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur esse minus aperiam vel earum sint eligendi, necessitatibus uptatem fugiat cum ratione praesentium reiciendis at.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore non et qui accusantium.Laboriosam temporibus aperiam repudiandae magnam vero blanditiis!Ipsam laborum sit error, accusantium fugit assumenda pariatur totam voluptate.",
+            "image": "https://i.picsum.photos/id/400/350/202.jpg",
+            "date": "10/5/20",
+            "technologies": ["html-5", "css3", "javascript", "html-5", "css3", "javascript"]
+        },
+        {
+            "id": 1,
+            "title": "jwt-login-nodejs-express",
+            "subTitle": "NodeJS",
+            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur esse minus aperiam vel earum sint eligendi, necessitatibus uptatem fugiat cum ratione praesentium reiciendis at.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore non et qui accusantium.Laboriosam temporibus aperiam repudiandae magnam vero blanditiis!Ipsam laborum sit error, accusantium fugit assumenda pariatur totam voluptate.",
+            "image": "https://i.picsum.photos/id/400/350/202.jpg",
+            "date": "10/5/20",
+            "technologies": ["html-5", "css3", "javascript"]
+        }
+    ],
+
+    "educations": [{
+        "university": "MAKAUT",
+        "degree": "Bachelors Of Technology",
+        "institute": "Information Technology",
+        "grade": "CGPA 8",
+        "timeline": "August 2017 - August 2021"
+    }, {
+        "university": "MAKAUT",
+        "degree": "Bachelors Of Technology",
+        "institute": "Information Technology",
+        "timeline": "August 2017 - August 2021"
+    }],
+
+    "experiences": [{
+        "role": "Web Developer",
+        "company": "Ace Lumbers PVT. LTD.",
+        "description": "Lorem ipsum dol",
+        "timeline": "August 2017 - August 2021"
+    }],
+
+    "achievements": [{
+        "name": "Achievement 1",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur esse minus aperiam vel earum sint eligendi, necessitatibus uptatem fugiat cum ratione praesentium reiciendis at.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore non et qui accusantium.Laboriosam temporibus aperiam repudiandae magnam vero blanditiis!Ipsam laborum sit error, accusantium fugit assumenda pariatur totam voluptate.",
+        "timeline": "November 2019",
+        "link": "https://abcd.com"
+    }]
+}
