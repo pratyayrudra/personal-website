@@ -14,6 +14,7 @@ initialize = async () => {
     experiences = db.experiences;
     achievements = db.achievements;
     setProjects();
+    setAllProjects();
     setEducations();
     setExperiences();
     setAchievements();
@@ -35,6 +36,7 @@ closeProjects = () => {
         document.querySelector(".sidebar ul").style.display = "block"
     }
     document.querySelector(".content").style.display = "block"
+    window.scrollTo(0, 0)
 }
 
 setProjects = async () => {
@@ -59,7 +61,7 @@ setProjects = async () => {
         })
         html += `
                     </span>
-                    <a class="btn">View Project</a>
+                    <a class="btn" href="#ID${project.id}" onclick="displayProjects();">View Project</a>
                 </div>
 
             </div>
@@ -69,6 +71,48 @@ setProjects = async () => {
     })
     document.querySelector("#projectContent").innerHTML = fewProjects;
 
+}
+
+setAllProjects = async () => {
+
+    let allProjects = "";
+    projects.forEach(project => {
+        let html = `
+            <div class="space" id="ID${project.id}"><hr></div>
+            <div class="project-item">
+            <div class="project-item-header">
+                <h4>${project.title}</h4>
+                <h5>${project.subTitle}</h5>
+                <img src="${project.image}" alt="">
+                <p>${project.description}</p>
+            </div>
+            <div class="project-item-footer">
+                <div class="project-item-footer-right">
+                    <span>
+                        <p>Technologies Used</p>
+        `
+        project.technologies.forEach(technology => {
+            let tech = `
+                <img src="assets/icons/icons8-${technology}-50.png" alt="${technology}">
+            `;
+            html += tech;
+        })
+        html += `
+                    </span>
+                    <span>
+                        <p>Project ID: <b>ID${project.id}</b></p>
+                    </span>
+                    <span>
+                        <p>Date: <b>${project.date}</b></p>
+                    </span>
+                    <a class="btn" href="${project.link}"><i class="fab fa-github"></i>&nbsp;Project Link</a>
+                </div>
+            </div>
+        </div>
+        `
+        allProjects += html;
+    })
+    document.querySelector("#allProjectContent").innerHTML = allProjects;
 }
 
 setEducations = async () => {
