@@ -1,55 +1,74 @@
 {
     "projects": [{
-            "id": 1,
-            "title": "Project Title 1",
-            "subTitle": "WordPress",
-            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur esse minus aperiam vel earum sint eligendi, necessitatibus uptatem fugiat cum ratione praesentium reiciendis at.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore non et qui accusantium.Laboriosam temporibus aperiam repudiandae magnam vero blanditiis!Ipsam laborum sit error, accusantium fugit assumenda pariatur totam voluptate.",
-            "image": "https://i.picsum.photos/id/400/350/202.jpg",
-            "date": "3/5/20",
-            "technologies": ["html-5", "css3", "bootstrap", "javascript", "bootstrap"]
-        }, {
-            "id": 2,
-            "title": "Video Based Dynamic Human Authentication System For Access Control",
-            "subTitle": "NodeJS",
-            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur esse minus aperiam vel earum sint eligendi, necessitatibus uptatem fugiat cum ratione praesentium reiciendis at.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore non et qui accusantium.Laboriosam temporibus aperiam repudiandae magnam vero blanditiis!Ipsam laborum sit error, accusantium fugit assumenda pariatur totam voluptate.",
-            "image": "https://i.picsum.photos/id/400/350/202.jpg",
-            "date": "10/5/20",
-            "technologies": ["html-5", "css3", "javascript", "html-5", "css3", "javascript"]
-        },
-        {
-            "id": 3,
-            "title": "jwt-login-nodejs-express",
-            "subTitle": "NodeJS",
-            "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur esse minus aperiam vel earum sint eligendi, necessitatibus uptatem fugiat cum ratione praesentium reiciendis at.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore non et qui accusantium.Laboriosam temporibus aperiam repudiandae magnam vero blanditiis!Ipsam laborum sit error, accusantium fugit assumenda pariatur totam voluptate.",
-            "image": "https://i.picsum.photos/id/400/350/202.jpg",
-            "date": "10/5/20",
-            "technologies": ["html-5", "css3", "javascript"]
-        }
-    ],
+        "id": 1,
+        "title": "Oauth2 Fake Server",
+        "subTitle": "Authentication",
+        "description": "To work with some APIs and Services developers often need a Oauth2.0 authorization system that can generate Access Tokens, Refresh Tokens and also a way to verify those.<br><br>There are several Oauth 2.0 providers that simplify the entire process of maintaining server, authentication, authorization and more in a secure way. But just for quick development/testing of small projects this systems can be very difficult to use and manage. So often false end points are created by developers to simulate the entire process.<br><br>This Oauth2 Fake Server helps you to do that by creating a simple and standalone Oauth2.0 Server that follows the Authorization Code Grant flow.",
+        "image": "/assets/images/projects/1.png",
+        "date": "3/5/20",
+        "technologies": ["nodejs", "javascript", "bootstrap"],
+        "link": "https://github.com/pratyayrudra/oauth2-fake-server"
+    }, {
+        "id": 2,
+        "title": "Video Based Dynamic Human Authentication System For Access Control",
+        "subTitle": "Machine Learning",
+        "description": "Though there exists a technology for face recognition based authentication, dynamic human recognition based authentication is highly challenging. For a given entrance gate a hardware-software solution is needed to identify every unique person who enters or exit the gate, with log of all previous entry/exit time, photo/videos recorded.",
+        "image": "/assets/images/projects/2.jpg",
+        "date": "22/1/20",
+        "technologies": ["python", "mongodb"],
+        "link": "https://github.com/pratyayrudra/HackaSixClan"
+    }, {
+        "id": 3,
+        "title": "Stone Paper Scissor Game",
+        "subTitle": "Javascript Game",
+        "description": "This is the plain and simple stone paper scissor game.<br><br>The user can play against the computer only.<br><br>The scores are shown in realtime on the dashboard itself.<br><br>The game can be reset by the user using the RESET button.",
+        "image": "/assets/images/projects/2.jpg",
+        "date": "15/4/20",
+        "technologies": ["javascript", "html-5", "css3"],
+        "link": "https://github.com/pratyayrudra/stone-paper-scissor"
+    }, {
+        "id": 4,
+        "title": "Clock Theme Switcher",
+        "subTitle": "Practice",
+        "description": "This is a simple project in which i implemented a toggle to switch between Dark and Light Theme.<br><br>For the content part I have used javascript to display the current time and this is updated every second.",
+        "image": "/assets/images/projects/2.jpg",
+        "date": "8/4/20",
+        "technologies": ["javascript", "html-5", "css3"],
+        "link": "https://github.com/pratyayrudra/clock-theme-switcher"
+    }],
 
     "educations": [{
-        "university": "MAKAUT",
-        "degree": "Bachelors Of Technology",
-        "institute": "Information Technology",
-        "grade": "CGPA 8",
-        "timeline": "August 2017 - August 2021"
+        "university": "RCC Institute of Information Technology",
+        "degree": "B.Tech",
+        "course": "B.Tech Information Technology",
+        "timeline": "2017 - Present"
     }, {
-        "university": "MAKAUT",
-        "degree": "Bachelors Of Technology",
-        "institute": "Information Technology",
-        "timeline": "August 2017 - August 2021"
+        "university": "Bharatiya Vidya Bhavan",
+        "degree": "High School",
+        "course": "Science Stream",
+        "timeline": "2015 - 2017"
+    }, {
+        "university": "Bharatiya Vidya Bhavan",
+        "degree": "School",
+        "course": "Class 1 to 10",
+        "timeline": "2005 - 2015"
     }],
 
     "experiences": [{
+        "role": "WordPress Development",
+        "company": "Bums On The Saddle Pvt. Ltd.",
+        "description": "<ul><li>I got this internship from Internshala. The project was to create a marketplace where anyone can post ads.</li><li>I used WordPress to develop the entire site.</li><li>It was like OLX but only for cycling related things.</li></ul>",
+        "timeline": "September 2019 - October 2019"
+    }, {
         "role": "Web Developer",
-        "company": "Ace Lumbers PVT. LTD.",
-        "description": "Lorem ipsum dol",
-        "timeline": "August 2017 - August 2021"
+        "company": "Ace Lumbers Pvt. Ltd.",
+        "description": "<ul><li>I got this internship from Internshala. I created their eCommerce website from scratch.</li><li>I used WordPress and Woocommerce.</li><li>I also created their main portfolio website.</li></ul>",
+        "timeline": "April 2019 - June 2019"
     }],
 
     "achievements": [{
-        "name": "Achievement 1",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non consectetur esse minus aperiam vel earum sint eligendi, necessitatibus uptatem fugiat cum ratione praesentium reiciendis at.Lorem ipsum dolor sit, amet consectetur adipisicing elit.Inventore non et qui accusantium.Laboriosam temporibus aperiam repudiandae magnam vero blanditiis!Ipsam laborum sit error, accusantium fugit assumenda pariatur totam voluptate.",
+        "name": "Bengalathon 2019 Finalist",
+        "description": "We reached the finale round of BENGALATHON 2019",
         "timeline": "November 2019",
         "link": "https://abcd.com"
     }]

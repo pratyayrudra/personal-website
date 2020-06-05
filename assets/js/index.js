@@ -49,7 +49,7 @@ setProjects = async () => {
                 <div class="project-item-content">
                     <h4>${project.title}</h4>
                     <h5>${project.subTitle}</h5>
-                    <p>${project.description}</p>
+                    <p>${project.description.slice(0, 120)}</p>
                     <div class="project-item-footer">
                         <span>
         `;
@@ -61,7 +61,7 @@ setProjects = async () => {
         })
         html += `
                     </span>
-                    <a class="btn" href="#ID${project.id}" onclick="displayProjects();">View Project</a>
+                    <a class="btn" href="#${project.id}" onclick="displayProjects();">View Project</a>
                 </div>
 
             </div>
@@ -78,7 +78,7 @@ setAllProjects = async () => {
     let allProjects = "";
     projects.forEach(project => {
         let html = `
-            <div class="space" id="ID${project.id}"><hr></div>
+            <div class="space" id="${project.id}"><hr></div>
             <div class="project-item">
             <div class="project-item-header">
                 <h4>${project.title}</h4>
@@ -100,12 +100,12 @@ setAllProjects = async () => {
         html += `
                     </span>
                     <span>
-                        <p>Project ID: <b>ID${project.id}</b></p>
+                        <p>Project ID: <b>${project.id}</b></p>
                     </span>
                     <span>
                         <p>Date: <b>${project.date}</b></p>
                     </span>
-                    <a class="btn" href="${project.link}"><i class="fab fa-github"></i>&nbsp;Project Link</a>
+                    <a class="btn" target="_blank" href="${project.link}"><i class="fab fa-github"></i>&nbsp;Project Link</a>
                 </div>
             </div>
         </div>
@@ -122,9 +122,9 @@ setEducations = async () => {
         let html = `
             <div class="education-item">
                 <div class="details">
-                    <h4>${education.university}</h4>
-                    <h5>${education.degree}</h5>
-                    <p>${education.institute}</p>
+                    <h4>${education.degree}</h4>
+                    <h5>${education.university}</h5>
+                    <p>${education.course}</p>
                     <p>${education.grade ? education.grade : ""}</p>
                 </div>
                 <div class="timeline">

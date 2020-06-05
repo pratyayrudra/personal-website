@@ -635,7 +635,7 @@ textarea {
 }
 
 .project-full .project .project-content .project-item .project-item-header p {
-    text-align: justify;
+    text-align: center;
     line-height: 1.2;
     color: var(--text);
 }
