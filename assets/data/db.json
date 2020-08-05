@@ -55,6 +55,11 @@
     }],
 
     "experiences": [{
+        "role": "Web Developer",
+        "company": "E-Intellisense.",
+        "description": "<ul><li>I got this internship from Internshala. It is a web development company.</li><li>I used WordPress to create websites from scratch.</li></ul>",
+        "timeline": "July 2020 - Present"
+    }, {
         "role": "WordPress Development",
         "company": "Bums On The Saddle Pvt. Ltd.",
         "description": "<ul><li>I got this internship from Internshala. The project was to create a marketplace where anyone can post ads.</li><li>I used WordPress to develop the entire site.</li><li>It was like OLX but only for cycling related things.</li></ul>",
